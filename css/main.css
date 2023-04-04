@@ -58,7 +58,8 @@ body::after {
 }
 
 .countdown {
-	display: flex;
+	display: none;
+	transform: scale(2);
 	align-items: center;
 	justify-content: center;
 }
