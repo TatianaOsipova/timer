@@ -33,14 +33,13 @@ function updateCounter() {
     seconds.textContent = secondsLeft < 10 ? '0' + secondsLeft : secondsLeft;
 }
 
-
-
 // Запускаем расчет 1 раз в секунду (каждую секунду)
 setInterval(updateCounter, 1000);
 
 setTimeout(function () {
-
-});
+    preloader.remove();
+    countdown.style.display = 'flex';
+}, 1000);
 
 
 
